@@ -1,0 +1,33 @@
+{
+  "fields": [
+    {
+      "type": "input",
+      "id": "firstName",
+      "label": "First Name",
+      "message": "please ensure field has a value"
+    },
+    {
+      "type": "input",
+      "id": "lastName",
+      "label": "Last Name",
+      "message": "please ensure field has a value"
+    },
+    {
+      "type": "input",
+      "id": "email",
+      "label": "Email",
+      "message": "please ensure field is an email"
+    },
+    {
+      "type": "select",
+      "id": "favoriteAnimal",
+      "label": "What's your favorite animal?",
+      "message": "please ensure option is selected",
+      "opts": [
+        { "label": "Cat", "value": "cat" },
+        { "label": "Dog", "value": "dog" },
+        { "label": "Sea Otter", "value": "onlyvalidanswer" }
+      ]
+    }
+  ]
+}

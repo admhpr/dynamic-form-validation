@@ -1,0 +1,24 @@
+{
+  "fields": [
+    {
+      "type": "input",
+      "id": "firstName",
+      "label": "First Name"
+    },
+    {
+      "type": "input",
+      "id": "lastName",
+      "label": "Last Name"
+    },
+    {
+      "type": "input",
+      "id": "email",
+      "label": "Email"
+    },
+    {
+      "type": "input",
+      "id": "phoneNumber",
+      "label": "Phone Number"
+    }
+  ]
+}
