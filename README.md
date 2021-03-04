@@ -4,6 +4,9 @@
 
 ## Overview
 
+![overview](./diagrams/overview.png)
+
+
 ```
 .
 ├── package.json
@@ -33,8 +36,6 @@
         ├── schemaParser.js
         └── validators.js  // validators used by validation mixin
 ```
-
-![overview](./diagrams/overview.png)
 
 ## Component Communication
 
