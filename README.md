@@ -40,11 +40,11 @@
 
 ## Component Communication
 
-![props events](./diagrams/props-events.png)
-
 Communication between components sending props from parent to child and emitting events and subsequent data changes using `$emit`.
 
 In the props-down and events-up pattern, the parent component’s data object is the single source of truth for the whole application. Child components should receive data from the parent’s data object via props — “props-down”. And parent component should update its state by handling events emitted from child components — “events-up”.
+
+![props events](./diagrams/props-events.png)
 
 ![FormContainer](./src/containers/FormContainer.vue) in this case acting as the root component holding the state and source of truth.
 
