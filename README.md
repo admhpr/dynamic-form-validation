@@ -79,7 +79,7 @@ However, as we are only listening to the `submit` event, the same result can be 
 </FormContainer>
 ```
 
-> v-on="$listeners" is similar in concept to [$attrs](https://vuejs.org/v2/api/#vm-attrs). So much so they are combined them in [Vue 3](https://v3.vuejs.org/guide/migration/listeners-removed.html). They are powerful parts of Vue's API but like slots and dynamic components can be a little abstract initially.
+> v-on="$listeners" is similar in concept to [$attrs](https://vuejs.org/v2/api/#vm-attrs). So much so they are combined them in [Vue 3](https://v3.vuejs.org/guide/migration/listeners-removed.html). They are a powerful part of Vue's API, but like slots and dynamic components can be a little abstract initially.
 
 ## Form Layout
 
