@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import DynamicFormField from "@/components/DynamicFormField";
+import DynamicFormField from "@/components/DynamicFormField"
 export default {
   name: `FormContainer`,
   components: { DynamicFormField },
@@ -47,11 +47,11 @@ export default {
     return {
       form: {},
       formValidations: {},
-    };
+    }
   },
   methods: {
     onValueUpdate({ name, isValid }) {
-      this.formValidations[name] = isValid;
+      this.formValidations[name] = isValid
     },
     onSubmit() {
       for (const field of Object.keys(this.form)) {
@@ -60,30 +60,30 @@ export default {
            * using $refs to change value of child component see:
            * https://vuejs.org/v2/guide/components-edge-cases.html#Accessing-Child-Component-Instances-amp-Child-Elements
            */
-          this.$refs[field][0].isTouched = true;
+          this.$refs[field][0].isTouched = true
         }
       }
       if (this.isValidForm()) {
-        this.$emit(`submit`, this.form);
-        return;
+        this.$emit(`submit`, this.form)
+        return
       }
     },
     isValidForm() {
-      return Object.values(this.formValidations).every(Boolean);
+      return Object.values(this.formValidations).every(Boolean)
     },
   },
   watch: {
     initialFormValues(value) {
-      this.form = value;
+      this.form = value
     },
   },
-};
+}
 </script>
 <style scoped>
 .form {
-  border: 1px solid black;
+  border: 1px solid var(--brand-dark);
   max-width: 500px;
-  background-color: #fff;
+  background-color: var(--brand-light);
   margin: 20px auto;
   box-shadow: -0.6rem 0.6rem 0 rgba(29, 30, 28, 0.26);
   padding: 20px;
@@ -97,7 +97,7 @@ export default {
 button {
   border: 2px solid rgba(0, 0, 0, 0.6);
   background-image: none;
-  background-color: #dadad3;
+  background-color: var(--brand-grey);
   box-shadow: none;
   padding: 5px;
   cursor: pointer;

@@ -9,28 +9,30 @@
 </template>
 
 <script>
-import StaticForm from "@/components/StaticForm";
-import DynamicForm from "@/components/DynamicForm";
-import UpdateUserForm from "@/components/UpdateUserForm";
+import StaticForm from "@/components/StaticForm"
+import DynamicForm from "@/components/DynamicForm"
+import UpdateUserForm from "@/components/UpdateUserForm"
 export default {
   name: "app",
   components: { StaticForm, DynamicForm, UpdateUserForm },
   methods: {
     submitStaticForm(values) {
-      console.log(`valid static form`, values);
+      console.log(`valid static form`, values)
     },
     submitDynamicForm(values) {
-      console.log(`valid dynamic form`, values);
+      console.log(`valid dynamic form`, values)
     },
     submitUpdateUserForm(values) {
-      console.log(`valid update user form`, values);
+      console.log(`valid update user form`, values)
     },
   },
-};
+}
 </script>
 <style>
 :root {
-  --form-field-color: grey;
+  --brand-light: #fff;
+  --brand-dark: black;
+  --brand-grey: #dadad3;
   --is-danger: red;
 }
 </style>
