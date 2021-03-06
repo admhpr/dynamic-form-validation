@@ -1,4 +1,4 @@
-[CodeSandbox](https://codesandbox.io/s/friendly-satoshi-33yj7)
+[CodeSandbox](https://codesandbox.io/s/github/admhpr/dynamic-form-validation)
 
 > Open console to view form payloads.
 
