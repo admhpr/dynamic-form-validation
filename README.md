@@ -46,7 +46,7 @@ In the props-down and events-up pattern, the parent component’s data object is
 
 ![props events](./diagrams/props-events.png)
 
-![FormContainer](./src/containers/FormContainer.vue) in this case acting as the container holding the state and source of truth.
+[FormContainer](./src/containers/FormContainer.vue) in this case acting as the container holding the state and source of truth.
 
 The the form value state is held in `form` and the state of validations against the form in `formValidations`.
 
